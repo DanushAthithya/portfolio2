@@ -648,6 +648,7 @@
     width: 50%;
   }
   
+  
   }
 
   @media only screen and (max-width: 551px) {
@@ -672,7 +673,11 @@
       max-height: 15vh;
     }
     
-
+    #preloader img{
+      width: 80% !important;
+      height: 30% !important;
+  
+    }
     
 
     .hov {
