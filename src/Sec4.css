@@ -1,0 +1,118 @@
+.Sec4 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid rgb(231, 252, 8);
+    background-image: linear-gradient(black,rgb(9, 9, 48),rgb(3, 1, 14));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+  }
+
+.in-sec{
+    width: 50%;
+    margin: 25%;
+    height: 70%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+  
+    
+    @media only screen and (min-width: 200px) and (max-width: 768px) {
+      .Sec4 {
+          padding: 20px;
+          background: -webkit-linear-gradient( #053f7e,#000f1f,);
+          border: 1px solid rgb(231, 252, 8);
+        }
+    }
+  
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      background-color: -webkit-linear-gradient( left,#ffffff,#000f1f,) !important;
+    }
+    
+    .top {
+      color:white;
+      margin-bottom: 3%;
+      margin-left: -90%;
+      margin-top: 3%;
+    }
+  
+   
+  
+    .mtop {
+      color:aliceblue;
+      margin-bottom: 5px;
+      margin-left: -85%;
+      margin-top: 3%;
+    }
+  
+    @media (max-width: 450px) {
+      .top {
+        color:white;
+        margin-bottom: 3%;
+        margin-left: -80%;
+        margin-top: 3%;
+      }
+    
+     
+    
+      .mtop {
+        color:aliceblue;
+        margin-bottom: 5px;
+        margin-left: -75%;
+        margin-top: 3%;
+      }
+
+      .in-sec{
+        width: 80%;
+        margin: 10%;
+        height: 80%;
+    }
+      
+    }
+    
+    input,
+    textarea {
+      padding: 10px;
+      margin-top: 10px;
+      
+      border: 3px solid #91edff;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: transparent;
+      color: aliceblue;
+    }
+  
+    input:focus,
+  textarea:focus {
+    background-color: #004765;
+  }
+  
+  input:hover,
+  textarea:hover {
+    border: 3px solid#a200ff;
+  }
+    
+    button {
+      padding: 10px 20px;
+      color: #fff;
+      border: 2px solid rgb(231, 252, 8);
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 2%;
+    }
+    
+    button:hover {
+      /* background-color: #0062cc; */
+      border: 2px solid #00ff73;
+    }
+  
+    ::placeholder {
+      color: rgb(183, 183, 183);
+    }
+    

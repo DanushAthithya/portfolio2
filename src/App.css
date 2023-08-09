@@ -1,38 +1,780 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navbar-container {
+  height: auto;
+  width: auto;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 1rem;
+  background: #000;
+  color: #fff;
+}
+
+/* .logo-image {
+  width: 15vw; 
+  height: 10vh;
+} */
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 1rem; 
+}
+
+
+.menu-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.bg-image {
+  opacity: 0.9; 
+}
+
+::-webkit-scrollbar {
+  width: 1vh;
+}
+
+
+
+::-webkit-scrollbar-track {
+  background: #370606;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(1, 255, 179, 0.959);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(1, 217, 255, 0.911);
+  border-radius: 12px;
+}
+
+
+
+
+.container {
+  /* position: absolute; */
+  margin-top: 10%;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  /* left: 2%; */
+  font-size: 200%;
+  color: rgb(255, 255, 255);
+}
+
+ /* .cont{
+  margin-top: 18%;
+} */
+
+/* .container1 {
+  position: absolute;
+  top: 110%;
+  left: 6%;
+  font-size: 200%;
+  color: black;
+  font-family: 'Montserrat';
+}    */
+
+/* #tsparticles {
+  z-index: 999999;
+  position: relative !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100%;
+  height: 100%;
+} */
+
+.Sec2{
+  padding-top: 30px !important;
+  border: 1px solid rgb(231, 252, 8);
+}
+
+.Sec3 {
+  position: relative !important;
+  padding-top: 30px !important; 
+
+  padding-bottom: 30px !important;
+  background-image: linear-gradient(
+    to bottom right,
+    #08307c,
+    #047f7d
+  ) !important;
+  background-repeat: no-repeat;
+  height: auto;
+  margin: 0;
+  border: 1px solid rgb(231, 252, 8);
+}
+
+.project-card {
+  /* padding-top: 50px !important; */
+  padding-bottom: 50px !important;
+  padding-left: 75px !important;
+  padding-right: 75px !important;
+  height: 60% !important;
+  width: 40%;
+}
+
+.proj-row{
+  display: flex;
+  align-items: center;
+}
+
+.myfont {
+  font-family: "myFont";
+  color: #4fa2ef;
+  font-weight: 400;
+}
+
+.project-card-view {
+  box-shadow: 0px 0px 8px 5px rgba(238, 82, 255, 0.849) !important;
+  color: white !important;
+  background: black;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+.project-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0px 0px 4px 5px rgb(231, 252, 8) !important;
+}
+
+ .card-img-top {
+  padding: 20px !important;
+  opacity: 0.8 !important;
+  border-radius: 10px !important;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+/*
+.blog-img {
+  padding: 0px !important;
+  opacity: 0.8 !important;
+  border-radius: 0px !important;
+} */
+
+.project-heading {
+  color: white !important;
+  font-weight: 500 !important;
+  /* padding-top: 50px !important; */
+}
+
+.tech-icons{
+  font-size: 80px;
+  margin: auto;
+  border-radius: 10%;
+  box-shadow: 0px 0px 6px 4px  rgba(238, 82, 255, 0.849);
+  background-color: rgb(0,0,0);
+  transition: 1s all;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.tech-icons:hover{
+  box-shadow: 0px 0px 4px 4px rgb(231, 252, 8);
+  scale: 1.1;
+}
+.Sec2{
+  background-image: linear-gradient(black,rgb(9, 9, 48),rgb(3, 1, 14));
+  background-size: cover !important;
+  width: 100%;
+  height: 100%;
+}
+.Sec3{
+  background-image: url("./asset/sec3_bgp.jpg") !important;
+  background-size: cover !important;
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  background: black;
+  bottom: 0 !important;
+  padding-top: 10px !important;
+  padding-bottom: 8px !important ;
+  border-top: 2px solid rgb(231, 252, 8);
 }
+.footer-copywright {
+  padding-top: 18px;
+  text-align: center !important;
+  justify-content: center;
+  border: #00f299;
+}
+
+.footer-body {
+  z-index: 1;
+  text-align: center !important;
+}
+
+.footer h3 {
+  font-size: 1em;
+  color: white !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+}
+.footer-icons {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+  padding: 0 !important;
+}
+
+.blockquote-footer {
+  color: #a588c0 !important;
+}
+
+.social-icons {
+  display: inline-block !important;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#preloader:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  background-color: black;
+  animation-name: backgroundAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+
+#preloader-none{
+  display:none;
+}
+
+@keyframes backgroundAnimation {
+  
+  50% {
+    opacity: 0;
+  }
+  
+  90% {
+    opacity: 1;
+  }
+  
+}
+
+
+
+
+@media only screen and (min-width: 1200px){
+  
+
+  .logo-image {
+    margin: 0 auto;
+    max-width: 12vw;
+    max-height: 10vh;
+  }
+
+  .hov {
+    font-size: 150%;
+    /* background: -webkit-linear-gradient( #efeded, #65e0ff); */
+    background-color: white;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-weight: 600;
+   }
+   
+ 
+   .hov:hover{
+    font-size: 150%;
+    /* background: -webkit-linear-gradient( #dfdcdc, #f2fa0b); */
+    background-color: #f2fa0b;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-weight: 600;
+ }
+
+  .profile_pic{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 15vw;
+    height: 20vh;
+  }
+
+  .trackVisibility{
+    position: absolute;
+    color: white;
+    font-size: xx-large;
+    top: 20%;
+    left: 40%;
+  }
+
+
+
+  .trackVisibility .tagline {
+    font-size: 20px;
+  }
+  .trackVisibility h1 {
+    font-size: 40px;
+  }
+  .trackVisibility p {
+    font-size: 18px;
+  }
+  .row-box{
+    width: 70vw;
+    height: auto;
+  }
+  .tech-icons{
+    font-size: 80px;
+    margin: auto;
+    border-radius: 10%;
+    box-shadow: 0px 0px 6px 4px  rgba(238, 82, 255, 0.849);
+    background-color: rgb(0,0,0);
+    transition: 1s all;
+    color: white;
+  }
+  .tech-icons:hover{
+    box-shadow: 0px 0px 4px 4px rgb(231, 252, 8);
+    scale: 1.1;
+  }
+
+  .project-heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+  }
+  
+
+}
+
+   
+ 
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (min-height:500px) {
+    .Sec1{
+      height: 140vh !important;
+    }
+
+    .navbar {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-title{
+      font-size: 16px !important;
+    }
+    .card-text{
+      font-size: 12px !important;
+    }
+   
+    
+    .logo-image {
+      margin: 0 auto;
+      max-width: 17vw;
+      max-height: 12vh;
+    }
+    
+    .size {
+      font-size: 1.4rem;
+    }
+
+    .hov {
+      font-size: 125%;
+      /* background: -webkit-linear-gradient( #efeded, #65e0ff); */
+      background-color: white;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-weight: 600;
+     }
+     
+   
+     .hov:hover{
+      font-size: 125%;
+      /* background: -webkit-linear-gradient( #dfdcdc, #0bfa93); */
+      background-color: #f2fa0b;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-weight: 600;
+   }
+
+   .profile_pic{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    width: 25vw;
+    height: 35vh;
+  }
+
+   .trackVisibility{
+    position: absolute;
+    color: white;
+    font-size: xx-large;
+    top: 50%;
+    left: 20%;
+    }
+    .trackVisibility h1{
+      font-size: 30px;
+    }
+    .trackVisibility p{
+      font-size: 18px;
+    }
+    .trackVisibility .tagline {
+      font-weight: 400;
+      letter-spacing: 0.6px;
+      padding: 8px 10px;
+      /* background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%); */
+      background: linear-gradient(90.21deg, rgba(250, 172, 3, 0.502) -5.91%, rgba(233, 247, 35, 0.507) 111.58%);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      font-size: 17px;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+    .trackVisibility button{
+      font-size: 18px;
+    }
+    .trackVisibility svg{
+      font-size: 20px;
+    }
+
+    .tech-icons{
+      font-size: 60px;
+    }
+
+    .project-card{
+      width: 50% !important;
+      height: 70% !important;
+    }
+
+    .project-heading{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 5vh;
+      margin-bottom: 12vh;
+    }
+    .card-button{
+      font-size: 22px !important;
+    }
+
+  }
+  @media only screen and (min-width: 551px) and (max-width: 767px){
+
+    .Sec1{
+      height: 150vh !important;
+    }
+
+    .navbar {
+      font-size: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .logo-image {
+      margin: 0 auto;
+      max-width: 20%;
+      max-height: 15%;
+    }
+    
+
+    .size {
+      font-size: 1rem;
+    }
+
+    .hov {
+      font-size: 105%;
+      /* background: -webkit-linear-gradient( #efeded, #65e0ff); */
+      background-color: white;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-weight: 600;
+     }
+     
+   
+     .hov:hover{
+      font-size: 105%;
+      /* background: -webkit-linear-gradient( #dfdcdc, #0bfa93); */
+      background-color: #f2fa0b;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-weight: 600;
+   }
+
+   .profile_pic{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    width: 25vw;
+    height: 35vh;
+  }
+   .trackVisibility{
+    position: absolute;
+    color: white;
+    font-size: xx-large;
+    top: 45%;
+    left: 20%;
+    }
+    .trackVisibility h1{
+      font-size: 28px;
+    }
+    .trackVisibility p{
+      font-size: 15px;
+    }
+    .trackVisibility .tagline {
+      font-weight: 400;
+      letter-spacing: 0.6px;
+      padding: 8px 10px;
+      /* background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%); */
+      background: linear-gradient(90.21deg, rgba(250, 172, 3, 0.502) -5.91%, rgba(233, 247, 35, 0.507) 111.58%);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      font-size: 15px;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+    .trackVisibility button{
+      font-size: 17px;
+    }
+    .trackVisibility svg{
+      font-size: 19px;
+    }
+
+    .tech-icons{
+      font-size: 50px;
+    }
+    .project-card{
+      width: 50% !important;
+      height: 50% !important;
+    }
+
+    .card-title{
+      font-size: 13px !important;
+    }
+    .card-text{
+      font-size: 10px !important;
+    }
+
+    .project-heading{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 5vh;
+      margin-bottom: 12vh;
+    }
+
+    .card-button{
+      font-size: 20px !important;
+    }
+
+  }
+
+  @media only screen and (max-height: 500px) and (min-width: 600px) {
+    .Sec1{
+      width: auto;
+      height: 150vh !important;
+      /* margin-top: 6vh; */
+      margin: 0;
+      position: relative;
+  }
+
+  .profile_pic{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 15vw;
+    height: 20vh;
+  }
+
+  .trackVisibility{
+    position: absolute;
+    color: white;
+    font-size: xx-large;
+    top: 20%;
+    left: 40%;
+  }
+
+  .logo-image {
+    margin: 0 auto;
+    max-width: 12vw;
+    max-height: 10vh;
+  }
+
+  .tech-icons{
+    font-size: 60px;
+  }
+
+  .project-card {
+    /* padding-top: 50px !important; */
+    padding-bottom: 50px !important;
+    padding-left: 75px !important;
+    padding-right: 75px !important;
+    height: 50% !important;
+    width: 50%;
+  }
+  
+  }
+
+  @media only screen and (max-width: 551px) {
+    .navbar {
+      font-size: 2.2vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .Sec1{
+      width: auto;
+      height: 80vh !important;
+      /* margin-top: 6vh; */
+      margin: 0;
+      position: relative;
+  }
+
+    .logo-image {
+      margin: 0 auto;
+      max-width: 40vw;
+      max-height: 15vh;
+    }
+    
+
+    
+
+    .hov {
+      font-size: 95%;
+      /* background: -webkit-linear-gradient( #efeded, #65e0ff); */
+      background-color: white;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-weight: 600;
+     }
+     
+   
+     .hov:hover{
+      font-size: 95%;
+      /* background: -webkit-linear-gradient( #dfdcdc, #0bfa93); */
+      background-color: #f2fa0b;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-weight: 600;
+   }
+
+   .profile_pic{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 50vw;
+    height: 50vh;
+  }
+   .trackVisibility{
+    position: absolute;
+    color: white;
+    top: 45%;
+    left: 20%;
+    right: auto;
+  }
+  .trackVisibility h1{
+    font-size: 18px;
+  }
+  .trackVisibility p{
+    font-size: 13px;
+  }
+  .trackVisibility .tagline {
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    padding: 8px 10px;
+    /* background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%); */
+    background: linear-gradient(90.21deg, rgba(250, 172, 3, 0.502) -5.91%, rgba(233, 247, 35, 0.507) 111.58%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+  .trackVisibility button{
+    font-size: 15px;
+  }
+  .trackVisibility svg{
+    font-size: 17px;
+  }
+  .tech-icons{
+    font-size: 30px;
+  }
+
+
+
+  .proj-row{
+    flex-direction: column;
+  }
+
+  .project-card{
+    width: 100% !important;
+    height: 10% !important;
+    margin: 0 !important;
+  }
+
+  .card-title{
+    font-size: 13px !important;
+  }
+  .card-text{
+    font-size: 10px !important;
+  }
+
+  .project-heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-bottom: 8vh;
+  }
+  .card-button{
+    font-size: 18px !important;
+  }
+
+  }
+  
+.under:hover::after {
+  content: "";
+  display: block;
+  height: 0.1vh;
+  width: 80%;
+  margin: 0 auto; 
+  background-color: #ffffff;
+}
+
+
+
